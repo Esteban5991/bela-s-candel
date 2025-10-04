@@ -1,0 +1,221 @@
+:root {
+  --rosa-pastel: #efd8d8;
+  --beige-frio: #f5f0e6;
+  --texto: #3d3d3d;
+  --rosa-sutil: #f9eaea;
+  --beige-suave: #f0eae0;
+  --acento: #c89fa3;
+  --blanco: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--beige-frio);
+  color: var(--texto);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--rosa-pastel);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--acento);
+}
+  .imagen-circular {
+    width: 20px; /* Establece el ancho */
+    height: 20px; /* Establece la misma altura */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Ajusta la imagen al cuadrado para que no se estire */
+  }
+
+
+.search-bar {
+  padding: 0.5rem;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  background-color: var(--rosa-sutil);
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+/* Filtros */
+.filtros {
+  padding: 1rem 2rem;
+}
+
+.filtro-tags button {
+  background-color: var(--beige-suave);
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.filtro-tags button:hover {
+  background-color: var(--rosa-pastel);
+}
+
+/* Productos */
+.productos {
+  padding: 2rem;
+}
+
+.producto-card {
+  display: flex;
+  background-color: var(--blanco);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+.producto-card img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.producto-card .info {
+  margin-left: 1.5rem;
+  flex: 1;
+}
+
+.producto-card h3 {
+  margin-top: 0;
+}
+
+.producto-card .precio {
+  font-weight: bold;
+  color: var(--acento);
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.producto-card button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--acento);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.producto-card button:hover {
+  background-color: #a5787e;
+}
+
+/* Carrito */
+.carrito {
+  padding: 2rem;
+  background-color: var(--beige-suave);
+  border-top: 2px solid var(--rosa-pastel);
+}
+
+.carrito ul {
+  list-style: none;
+  padding: 0;
+}
+
+.carrito li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Galería / Carrusel */
+.galeria {
+  background-color: var(--rosa-sutil);
+  padding: 2rem;
+  text-align: center;
+}
+
+.carrusel {
+  position: relative;
+  max-width: 90%;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.carrusel-imagenes {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 1rem;
+}
+
+.carrusel-imagenes img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 10px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.carrusel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--acento);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.carrusel-btn:hover {
+  background-color: #a5787e;
+}
+
+.carrusel-btn.izquierda {
+  left: 10px;
+}
+
+.carrusel-btn.derecha {
+  right: 10px;
+}
+
+/* Contacto */
+.contacto {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--rosa-sutil);
+}
+
+/* Footer */
+footer {
+  background-color: var(--rosa-pastel);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

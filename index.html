@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bela's Candel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo"><img src="./img/logo.jpg" alt="" width="20px0" height="20px"> <br/><span>Bela's Candel</span></div>
+    <input type="text" placeholder="Buscar velas..." class="search-bar" />
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#productos">Tienda</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#carrito" id="carrito-icono">🛒 (<span id="carrito-contador">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Bienvenida a Bela's Candel</h1>
+    <p>Explora nuestra colección de velas aromáticas artesanales.</p>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria" class="galeria">
+    <h2>Galería</h2>
+    <div class="carrusel">
+      <button class="carrusel-btn izquierda">←</button>
+      <div class="carrusel-imagenes">
+        <img src="./img/WhatsApp Image 2025-10-04 at 3.10.30 PM (1).jpeg" alt="Vela 1">
+        <img src="./img/WhatsApp Image 2025-10-04 at 3.10.30 PM (2).jpeg" alt="Vela 2">
+        <img src="./img/WhatsApp Image 2025-10-04 at 3.10.30 PM (3).jpeg" alt="Vela 3">
+        <img src="./img/WhatsApp Image 2025-10-04 at 3.10.30 PM (4).jpeg" alt="Vela 4">
+      </div>
+      <button class="carrusel-btn derecha">→</button>
+    </div>
+  </section>
+
+  <!-- FILTROS -->
+  <section class="filtros">
+    <h2>Filtrar por aroma:</h2>
+    <div class="filtro-tags">
+      <button>Lavanda</button>
+      <button>Vainilla</button>
+      <button>Rosa</button>
+      <button>Canela</button>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section id="productos" class="productos">
+    <h2>Catálogo de Velas</h2>
+
+    <div class="producto-card">
+      <img src="./img/WhatsApp Image 2025-10-04 at 3.10.30 PM (2).jpeg" alt="Rosa Romance" />
+      <div class="info">
+        <h3>Rosa Romance</h3>
+        <p>Vela suave con aroma floral a rosas frescas.</p>
+        <span class="precio">$120 MXN</span>
+        <button>Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="producto-card">
+      <img src="./img/WhatsApp Image 2025-10-04 at 3.10.30 PM (5).jpeg" alt="Vainilla Beige" />
+      <div class="info">
+        <h3>Vainilla Beige</h3>
+        <p>Una mezcla cálida y dulce, perfecta para relajarte.</p>
+        <span class="precio">$130 MXN</span>
+        <button>Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="producto-card">
+      <img src="./img/WhatsApp Image 2025-10-04 at 3.10.30 PM (6).jpeg" alt="Lavanda Suave" />
+      <div class="info">
+        <h3>Lavanda Suave</h3>
+        <p>Aroma relajante para noches tranquilas y descanso profundo.</p>
+        <span class="precio">$125 MXN</span>
+        <button>Agregar al carrito</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARRITO -->
+  <section id="carrito" class="carrito">
+    <h2>🛒 Tu Carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <p id="total-carrito">Total: $0 MXN</p>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contacto">
+    <h2>¿Dudas o pedidos personalizados?</h2>
+    <p>Contáctanos a: <a href="mailto:info@belascandel.com">info@belascandel.com</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Bela's Candel — Velas artesanales con amor.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
