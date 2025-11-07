@@ -10,7 +10,7 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   background-color: var(--beige-frio);
   color: var(--texto);
 }
@@ -30,13 +30,12 @@ body {
   font-weight: bold;
   color: var(--acento);
 }
-  .imagen-circular {
-    width: 20px; /* Establece el ancho */
-    height: 20px; /* Establece la misma altura */
-    border-radius: 50%; /* Hace que la imagen sea circular */
-    object-fit: cover; /* Ajusta la imagen al cuadrado para que no se estire */
-  }
-
+.imagen-circular {
+  width: 60px; /* Establece el ancho */
+  height: 60px; /* Establece la misma altura */
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  object-fit: cover; /* Ajusta la imagen al cuadrado para que no se estire */
+}
 
 .search-bar {
   padding: 0.5rem;
@@ -94,7 +93,7 @@ nav a {
   display: flex;
   background-color: var(--blanco);
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
   padding: 1rem;
   align-items: center;
@@ -176,7 +175,7 @@ nav a {
   max-width: 100%;
   border-radius: 10px;
   flex-shrink: 0;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .carrusel-btn {
